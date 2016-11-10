@@ -2,6 +2,7 @@
   "extends": "fullcube",
   "root": true,
   "rules": {
-    "no-console": 0
+    "no-console": 0,
+    "no-multiple-empty-lines": 0
   }
 }

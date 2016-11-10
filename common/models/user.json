@@ -3,14 +3,14 @@
   "base": "User",
   "idInjection": true,
   "options": {
+    "realmRequired": true,
+    "realmDelimiter": ":",
     "validateUpsert": true
   },
   "properties": {
     "realm": {
-      "type": "string"
-    },
-    "username": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "password": {
       "type": "string",
@@ -20,14 +20,48 @@
       "type": "string",
       "required": true
     },
-    "emailVerified": "boolean",
-    "verificationToken": "string",
-    "status": "string",
-    "created": "date",
-    "lastUpdated": "date"
+    "emailVerified": {
+      "type": "boolean"
+    },
+    "verificationToken": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "created": {
+      "type": "date"
+    },
+    "lastUpdated": {
+      "type": "date"
+    }
+  },
+  "indexes": {
+    "emailRealmUniqueIndex": {
+      "keys": {
+        "email": 1,
+        "realm": 1
+      },
+      "options": {
+        "unique": true
+      }
+    }
   },
   "validations": [],
-  "relations": {},
-  "acls": [],
+  "relations": {
+    "domain": {
+      "type": "belongsTo",
+      "model": "Domain",
+      "foreignKey": "realm"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "ALLOW"
+    }
+  ],
   "methods": {}
 }
