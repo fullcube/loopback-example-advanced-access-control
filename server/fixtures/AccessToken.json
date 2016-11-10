@@ -1,0 +1,14 @@
+[
+  {
+    "id": "admin-token",
+    "userId": 1
+  },
+  {
+    "id": "manager-token",
+    "userId": 2
+  },
+  {
+    "id": "user-token",
+    "userId": 3
+  }
+]
