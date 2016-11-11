@@ -12,6 +12,7 @@ describe('models', () => {
     'ACL',
     'RoleMapping',
     'Role',
+    'Group',
   ]
 
   it(`should have the expected number of models: ${expectedModels.length}`, done => {

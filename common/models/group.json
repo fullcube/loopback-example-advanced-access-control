@@ -1,0 +1,70 @@
+{
+  "name": "Group",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "domainId": {
+      "type": "string",
+      "required": true
+    },
+    "userId": {
+      "type": "string",
+      "required": true
+    },
+    "role": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "domain": {
+      "type": "belongsTo",
+      "model": "Domain",
+      "foreignKey": "domainId"
+    },
+    "user": {
+      "type": "belongsTo",
+      "model": "user",
+      "foreignKey": "userId"
+    }
+  },
+  "acls": [],
+  "methods": {
+    "findUserRoles": {
+      "description": "Get the domain roles for this user.",
+      "isStatic": true,
+      "accepts": [{
+        "arg": "userId",
+        "type": "String",
+        "required": true,
+        "description": "The ID of the user to find the roles for."
+      }],
+      "returns": {
+        "arg": "result",
+        "type": "Object",
+        "root": true
+      },
+      "http": {
+        "path": "/findUserRoles",
+        "verb": "get"
+      }
+    },
+    "findAllRoles": {
+      "description": "Get the domain roles for this domains.",
+      "isStatic": true,
+      "returns": {
+        "arg": "result",
+        "type": "Object",
+        "root": true
+      },
+      "http": {
+        "path": "/findAllRoles",
+        "verb": "get"
+      }
+    }
+  }
+}

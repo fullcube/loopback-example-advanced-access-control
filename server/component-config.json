@@ -9,5 +9,18 @@
     "fixturesPath": "/server/fixtures/",
     "loadFixturesOnStartup": true,
     "errorOnSetupFailure": true
+  },
+  "loopback-component-access-groups": {
+    "userModel": "user",
+    "roleModel": "Role",
+    "groupAccessModel": "Group",
+    "groupModel": "Domain",
+    "foreignKey": "domainId",
+    "groupRoles": [
+      "$group:user",
+      "$group:manager",
+      "$group:admin",
+      "$group:developer"
+    ]
   }
 }

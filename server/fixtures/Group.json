@@ -1,0 +1,97 @@
+[
+  {
+    "domainId": "example.com",
+    "userId": "1",
+    "role": "admin"
+  },
+  {
+    "domainId": "example.com",
+    "userId": "1",
+    "role": "manager"
+  },
+  {
+    "domainId": "example.com",
+    "userId": "1",
+    "role": "user"
+  },
+  {
+    "domainId": "example.com",
+    "userId": "1",
+    "role": "developer"
+  },
+  {
+    "domainId": "example.com",
+    "userId": "2",
+    "role": "manager"
+  },
+  {
+    "domainId": "example.com",
+    "userId": "3",
+    "role": "user"
+  },
+
+
+  {
+    "domainId": "example.net",
+    "userId": "4",
+    "role": "admin"
+  },
+  {
+    "domainId": "example.net",
+    "userId": "4",
+    "role": "manager"
+  },
+  {
+    "domainId": "example.net",
+    "userId": "4",
+    "role": "user"
+  },
+  {
+    "domainId": "example.net",
+    "userId": "4",
+    "role": "developer"
+  },
+  {
+    "domainId": "example.net",
+    "userId": "5",
+    "role": "manager"
+  },
+  {
+    "domainId": "example.net",
+    "userId": "6",
+    "role": "user"
+  },
+
+
+
+  {
+    "domainId": "example.org",
+    "userId": "7",
+    "role": "admin"
+  },
+  {
+    "domainId": "example.org",
+    "userId": "7",
+    "role": "manager"
+  },
+  {
+    "domainId": "example.org",
+    "userId": "7",
+    "role": "user"
+  },
+  {
+    "domainId": "example.org",
+    "userId": "7",
+    "role": "developer"
+  },
+  {
+    "domainId": "example.org",
+    "userId": "8",
+    "role": "manager"
+  },
+  {
+    "domainId": "example.org",
+    "userId": "9",
+    "role": "user"
+  }
+]

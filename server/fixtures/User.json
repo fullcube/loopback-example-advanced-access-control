@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "realm": "example.com",
     "email": "admin@example.com",
     "firstName": "Admin",
@@ -8,7 +8,7 @@
     "password": "password"
   },
   {
-    "id": 2,
+    "id": "2",
     "realm": "example.com",
     "email": "manager@example.com",
     "firstName": "Manager",
@@ -16,7 +16,7 @@
     "password": "password"
   },
   {
-    "id": 3,
+    "id": "3",
     "realm": "example.com",
     "email": "user@example.com",
     "firstName": "User",
@@ -24,7 +24,7 @@
     "password": "password"
   },
   {
-    "id": 4,
+    "id": "4",
     "realm": "example.net",
     "email": "admin@example.com",
     "firstName": "Admin",
@@ -32,7 +32,7 @@
     "password": "password"
   },
   {
-    "id": 5,
+    "id": "5",
     "realm": "example.net",
     "email": "manager@example.com",
     "firstName": "Manager",
@@ -40,7 +40,7 @@
     "password": "password"
   },
   {
-    "id": 6,
+    "id": "6",
     "realm": "example.net",
     "email": "user@example.com",
     "firstName": "User",
@@ -48,7 +48,7 @@
     "password": "password"
   },
   {
-    "id": 7,
+    "id": "7",
     "realm": "example.org",
     "email": "admin@example.com",
     "firstName": "Admin",
@@ -56,7 +56,7 @@
     "password": "password"
   },
   {
-    "id": 8,
+    "id": "8",
     "realm": "example.org",
     "email": "manager@example.com",
     "firstName": "Manager",
@@ -64,7 +64,7 @@
     "password": "password"
   },
   {
-    "id": 9,
+    "id": "9",
     "realm": "example.org",
     "email": "user@example.com",
     "firstName": "User",

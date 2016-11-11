@@ -9,6 +9,7 @@
     "mixins": [
       "loopback/common/mixins",
       "loopback/server/mixins",
+      "../node_modules/loopback-ds-iterator-mixin/lib",
       "../common/mixins",
       "./mixins"
     ]
@@ -34,6 +35,10 @@
     "public": false
   },
   "Domain": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Group": {
     "dataSource": "db",
     "public": true
   }

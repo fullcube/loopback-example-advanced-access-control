@@ -1,5 +1,7 @@
 {
   "initial:before": {
+    "loopback#context": {},
+    "loopback#token": {},
     "loopback#favicon": {}
   },
   "initial": {

@@ -2,12 +2,28 @@
   "name": "user",
   "base": "User",
   "idInjection": true,
+  "indexes": {
+    "emailRealmUniqueIndex": {
+      "keys": {
+        "email": 1,
+        "realm": 1
+      },
+      "options": {
+        "unique": true
+      }
+    }
+  },
   "options": {
     "realmRequired": true,
     "realmDelimiter": ":",
     "validateUpsert": true
   },
   "properties": {
+    "id": {
+      "type": "string",
+      "required": true,
+      "id": true
+    },
     "realm": {
       "type": "string",
       "required": true
@@ -36,16 +52,8 @@
       "type": "date"
     }
   },
-  "indexes": {
-    "emailRealmUniqueIndex": {
-      "keys": {
-        "email": 1,
-        "realm": 1
-      },
-      "options": {
-        "unique": true
-      }
-    }
+  "mixins": {
+    "Iterator": {}
   },
   "validations": [],
   "relations": {
@@ -53,6 +61,17 @@
       "type": "belongsTo",
       "model": "Domain",
       "foreignKey": "realm"
+    },
+    "roles": {
+      "type": "hasMany",
+      "model": "Role",
+      "through": "RoleMapping",
+      "foreignKey": "principalId"
+    },
+    "groups": {
+      "type": "hasMany",
+      "model": "Group",
+      "foreignKey": "userId"
     }
   },
   "acls": [
@@ -63,5 +82,61 @@
       "permission": "ALLOW"
     }
   ],
-  "methods": {}
+  "methods": {
+    "info": {
+      "description": "Get the roles for this user.",
+      "isStatic": false,
+      "returns": {
+        "arg": "result",
+        "type": "Object",
+        "root": true
+      },
+      "http": {
+        "path": "/info",
+        "verb": "get"
+      }
+    },
+    "addRole": {
+      "description": "Add a role to this user.",
+      "isStatic": false,
+      "accepts": [
+        {
+          "arg": "roleName",
+          "type": "String",
+          "required": true,
+          "description": "The name of the role to add to this user."
+        }
+      ],
+      "returns": {
+        "arg": "result",
+        "type": "Boolean",
+        "root": true
+      },
+      "http": {
+        "path": "/addRole",
+        "verb": "post"
+      }
+    },
+    "removeRole": {
+      "description": "Remove a role from this user.",
+      "isStatic": false,
+      "accepts": [
+        {
+          "arg": "roleName",
+          "type": "String",
+          "required": true,
+          "description": "The name of the role to remove from this user."
+        }
+      ],
+      "returns": {
+        "arg": "result",
+        "type": "Boolean",
+        "root": true
+      },
+      "http": {
+        "path": "/removeRole",
+        "verb": "post"
+      }
+    }
+  }
 }

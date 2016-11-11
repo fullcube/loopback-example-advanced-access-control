@@ -1,47 +1,57 @@
 [
   {
     "roleId": 1,
-    "principalId": 1,
+    "principalId": "1",
     "principalType": "USER"
   },
   {
     "roleId": 2,
-    "principalId": 2,
+    "principalId": "1",
     "principalType": "USER"
   },
   {
     "roleId": 3,
-    "principalId": 3,
+    "principalId": "1",
+    "principalType": "USER"
+  },
+  {
+    "roleId": 2,
+    "principalId": "2",
+    "principalType": "USER"
+  },
+  {
+    "roleId": 3,
+    "principalId": "3",
     "principalType": "USER"
   },
   {
     "roleId": 1,
-    "principalId": 4,
+    "principalId": "4",
     "principalType": "USER"
   },
   {
     "roleId": 2,
-    "principalId": 5,
+    "principalId": "5",
     "principalType": "USER"
   },
   {
     "roleId": 3,
-    "principalId": 6,
+    "principalId": "6",
     "principalType": "USER"
   },
   {
     "roleId": 1,
-    "principalId": 7,
+    "principalId": "7",
     "principalType": "USER"
   },
   {
     "roleId": 2,
-    "principalId": 8,
+    "principalId": "8",
     "principalType": "USER"
   },
   {
     "roleId": 3,
-    "principalId": 9,
+    "principalId": "9",
     "principalType": "USER"
   }
 ]
