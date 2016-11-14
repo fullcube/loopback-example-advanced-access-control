@@ -1,5 +1,7 @@
 {
-  "name": "poc-loopback-user-realms",
+  "name": "loopback-example-advanced-access-control",
+  "description": "LoopBack - Example implementation of advanced access control",
+  "license": "MIT",
   "version": "1.0.0",
   "main": "server/server.js",
   "scripts": {
@@ -22,6 +24,7 @@
     "loopback-datasource-juggler": "^2.39.0",
     "loopback-ds-iterator-mixin": "^1.0.5",
     "mocha": "^3.1.2",
+    "nodemon": "^1.11.0",
     "p-s": "^3.0.2",
     "serve-favicon": "^2.0.1",
     "strong-error-handler": "^1.0.1"
@@ -34,7 +37,5 @@
   "repository": {
     "type": "",
     "url": ""
-  },
-  "license": "MIT",
-  "description": "Proof of Concept: LoopBack API configured to partition users with realms "
+  }
 }

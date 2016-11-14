@@ -67,10 +67,10 @@ describe('Check the map of users in realms with their roles and groups', () => {
         done()
       })
 
-      describe(`${user.email} should have groups`, function() {
+      describe(`${user.email} should be a member of the expected group roles`, function() {
         _.forEach(user.groups, (userGroups, domainId) => {
 
-          it(`${user.email} should have groups: ${userGroups} on ${domainId}`, done => {
+          it(`${user.email} should be a member of group roles: ${userGroups} on ${domainId}`, done => {
             const assignedGroups = loggedInUserInfo.groups[domainId].assigned
 
             expect(assignedGroups).to.have.members(userGroups)

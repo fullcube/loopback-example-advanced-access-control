@@ -1,11 +1,14 @@
 [
   {
+    "id": "example.com",
     "name": "example.com"
   },
   {
+    "id": "example.net",
     "name": "example.net"
   },
   {
+    "id": "example.org",
     "name": "example.org"
   }
 ]

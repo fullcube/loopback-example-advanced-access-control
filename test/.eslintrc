@@ -1,16 +1,7 @@
 {
   "extends": "fullcube/mocha",
   "globals": {
-    "app": true,
-    "ref": true,
-    "lt": true,
-    "assert": true,
-    "nock": true,
-    "expect": true,
-    "_": true,
-    "fs": true,
-    "chai": true,
-    "sinon": true
+    "expect": true
   },
   "rules": {
     "filenames/match-regex": 0,

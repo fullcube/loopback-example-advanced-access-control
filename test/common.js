@@ -1,6 +1,7 @@
 'use strict'
 
-global.app = require('../server/server')
+const app = require('../server/server')
+
 global.expect = require('chai').expect
 
 const User = app.models.user
@@ -32,4 +33,5 @@ module.exports = {
   apiLogin,
   findUser,
   getFixtures,
+  app,
 }

@@ -1,4 +1,4 @@
-require('../common')
+const common = require('../common')
 
 describe('models', () => {
 
@@ -16,12 +16,12 @@ describe('models', () => {
   ]
 
   it(`should have the expected number of models: ${expectedModels.length}`, done => {
-    expect(Object.keys(app.models).length).to.equal(expectedModels.length)
+    expect(Object.keys(common.app.models).length).to.equal(expectedModels.length)
     done()
   })
 
   expectedModels.forEach(expectedModel => {
-    const Model = app.models[expectedModel]
+    const Model = common.app.models[expectedModel]
 
     it(`should have the model: ${expectedModel} `, done => {
       expect(Model).to.be.a('function')

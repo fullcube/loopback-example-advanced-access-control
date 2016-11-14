@@ -74,14 +74,7 @@
       "foreignKey": "userId"
     }
   },
-  "acls": [
-    {
-      "accessType": "READ",
-      "principalType": "ROLE",
-      "principalId": "$unauthenticated",
-      "permission": "ALLOW"
-    }
-  ],
+  "acls": [],
   "methods": {
     "info": {
       "description": "Get the roles for this user.",
