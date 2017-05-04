@@ -1,5 +1,7 @@
 # loopback-example-advanced-access-control
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/fullcube/loopback-example-advanced-access-control.svg)](https://greenkeeper.io/)
+
 > LoopBack - Example implementation of advanced access control
 
 # About
